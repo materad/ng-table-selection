@@ -1,0 +1,11 @@
+<div class="row">
+  <app-cell
+    *ngFor="let cell of cells; let columnIndex = index"
+    [cell]="cell"
+    [columnIndex]="columnIndex"
+    [rowIndex]="rowIndex"
+    (cellmouseenter)="cellMouseEnter.emit($event)"
+    (cellmouseclick)="cellMouseClick.emit($event)"
+    (cellmousedown)="cellMouseDown.emit($event)"
+  ></app-cell>
+</div>

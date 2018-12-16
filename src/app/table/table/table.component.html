@@ -1,0 +1,19 @@
+<div class="table">
+  <div class="columns">
+    <app-column
+      *ngFor="let column of table.columns; let i = index"
+      [column]="column"
+      [index]="i"
+    ></app-column>
+  </div>
+  <div class="table-rows">
+    <app-row
+      *ngFor="let row of table.rows; let i = index"
+      [cells]="row.cells"
+      [rowIndex]="i"
+      (cellMouseClick)="cellMouseClick($event)"
+      (cellMouseEnter)="cellMouseEnter($event)"
+      (cellMouseDown)="cellMouseDown($event)"
+    ></app-row>
+  </div>
+</div>

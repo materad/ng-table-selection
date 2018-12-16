@@ -1,0 +1,20 @@
+:host() {
+  flex: 1 1 0;
+  div {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    align-content: center;
+
+    p {
+      text-align: center;
+      margin: 0;
+
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none;
+    }
+  }
+}

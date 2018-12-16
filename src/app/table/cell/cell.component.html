@@ -1,0 +1,10 @@
+<div
+  class="cell"
+  [ngClass]="{ selected: selected }"
+  (click)="onMouseClick()"
+  (mouseenter)="onMouseEnter($event)"
+  (mousedown)="onMouseDown()"
+  [tabindex]="rowIndex"
+>
+  <p>{{ cell.value }}</p>
+</div>
